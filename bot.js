@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const Token = "NTQ1OTQ1NDY0Mzk5NDYyNDEx.D1KGkw.eq_MXW0mdrCpblpTokNekgP4UHw"
 
 client.on('ready', () => {
 console.log('Bot Connected/Logged in.')
@@ -23,4 +22,4 @@ msg.channel.send(help)
 
 
 
-client.login(Token)
+client.login(process.env.TOKEN)
